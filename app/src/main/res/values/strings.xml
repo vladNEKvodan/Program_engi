@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">WeatherProgram</string>
+    <string name="sky">TODO</string>
+    <string name="weather">weather</string>
+    <string name="temperature">-</string>
+    <string name="town">Введите город</string>
+    <string name="Today">Сегодня</string>
+    <string name="temperature_today">Температура</string>
+    <string name="wind_today">Ветер</string>
+    <string name="pressure_today">Давление</string>
+    <string name="morning">Утро</string>
+    <string name="temp_morning">-</string>
+    <string name="wind_morning">-</string>
+    <string name="pressure_morning">-</string>
+    <string name="afternoon">День</string>
+    <string name="evening">Вечер</string>
+    <string name="night">Ночь</string>
+    <string name="settings">Settings</string>
+    <string name="todo">TODO</string>
+    <string name="btnFind">Ввести</string>
+    <string name="Date">Дата</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="Type_of_temp">Выберете единицу измерения температуры:</string>
+    <string name="Type_of_wind">Выберете единицу измерения скорости ветра:</string>
+    <string name="Type_of_press">Выберете единицу измерения давления:</string>
+    <string name="set_settings">Подтвердить настройки</string>
+    <string name="rate_app">Оцените приложение</string>
+    <string name="todayinfo">todayInfo</string>
+    <string name="search">Search</string>
+    <string name="city">Город</string>
+    <string name="Location">Карта</string>
+    <string name="date">Дата</string>
+    <string name="info">Info</string>
+    <string name="NoInfo">-</string>
+    <string name="weathertype">weatherType</string>
+</resources>

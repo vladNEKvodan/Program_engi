@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="274dp"
+                android:alpha="0.5"
+                android:contentDescription="@string/sky"
+                android:src="@drawable/sky"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="220dp"
+                android:text="@string/Date"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/weather_image"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="100dp"
+                android:contentDescription="@string/weather"/>
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:fontFamily="@font/arbutus"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/todayWindImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="120dp"
+                android:contentDescription="@string/todayinfo" />
+
+            <ImageView
+                android:id="@+id/todayPresImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="170dp"
+                android:contentDescription="@string/todayinfo" />
+
+            <ImageView
+                android:id="@+id/todayTempImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="65dp"
+                android:contentDescription="@string/todayinfo"/>
+
+            <TextView
+                android:id="@+id/todayTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/temperature"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/temp_metrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="360dp"
+                android:layout_marginTop="65dp"
+                android:text="°C"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/todayWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="110dp"
+                android:text="@string/temperature"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/wind_metrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="120dp"
+                android:text="м/с"
+                android:textSize="20sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/todayPres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="160dp"
+                android:text="@string/temperature"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pres_metrics"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="190dp"
+                android:textSize="20sp"
+                android:text="мм.рт.ст">
+            </TextView>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/loopa"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/search">
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/etTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:hint="@string/town"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:autofillHints=""
+                    android:inputType="text" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/city"
+                    android:id="@+id/btnTown">
+                </Button>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/Location"
+                    android:textSize="15sp"
+                    android:id="@+id/btnLocation"
+                    tools:ignore="SmallSp">
+                </Button>
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_bg"
+
+                android:radius="5dp">
+
+                <TableRow android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:text="@string/date"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:text=""
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_marginStart="60dp"
+                        android:src="@drawable/temp"
+                        android:contentDescription="@string/info"/>
+
+                    <ImageView
+                        android:layout_marginStart="50dp"
+                        android:src="@drawable/wind"
+                        android:contentDescription="@string/info"/>
+
+                    <ImageView
+                        android:layout_marginStart="60dp"
+                        android:src="@drawable/pressure"
+                        android:contentDescription="@string/info"/>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/NoInfo"
+                        android:id="@+id/tvDay1"
+                        android:textSize="15sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/day1Weather"
+                        android:contentDescription="@string/weathertype" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/temp_1"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/NoInfo"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/wind_1"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/wind_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/press_1"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/pressure_morning"
+                        android:textSize="25sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/NoInfo"
+                        android:id="@+id/tvDay2"
+                        android:textSize="15sp"
+                        tools:ignore="RtlHardcoded" />
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/day2Weather"
+                        android:contentDescription="@string/weathertype" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/temp_2"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/temp_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/wind_2"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/wind_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/press_2"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/pressure_morning"
+                        android:textSize="25sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/NoInfo"
+                        android:id="@+id/tvDay3"
+                        android:textSize="15sp"
+                        tools:ignore="RtlHardcoded" />
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/day3Weather"
+                        android:contentDescription="@string/weathertype" />
+
+                    <TextView
+                        android:id="@+id/temp_3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/temp_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/wind_3"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/wind_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/press_3"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/pressure_morning"
+                        android:textSize="25sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/NoInfo"
+                        android:id="@+id/tvDay4"
+                        android:textSize="15sp"
+                        tools:ignore="RtlHardcoded" />
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/day4Weather"
+                        android:contentDescription="@string/weathertype" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/temp_4"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/temp_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/wind_4"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/wind_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/press_4"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/pressure_morning"
+                        android:textSize="25sp" />
+                </TableRow>
+                <TableRow android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/NoInfo"
+                        android:id="@+id/tvDay5"
+                        android:textSize="15sp"
+                        tools:ignore="RtlHardcoded" />
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/day5Weather"
+                        android:contentDescription="@string/weathertype" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/temp_5"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/temp_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/wind_5"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/wind_morning"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/press_5"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/pressure_morning"
+                        android:textSize="25sp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
